@@ -15,3 +15,15 @@ def search_address(pos_code):
 
     address = f"{pref_name}{city_name}{town_name}"
     return address
+
+
+def main():
+    pos_code = "0287111"
+
+    address = search_address(pos_code)
+
+    assert "岩手県 八幡平市 大更" == address
+
+
+if __name__ == "__main__":
+    main()
